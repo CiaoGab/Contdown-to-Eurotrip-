@@ -25,6 +25,7 @@ body {
 h1 {
     font-size: 4rem;
     margin-top: 10rem;
+     text-shadow: 2px 2px 8px #0a0a0a;
     
 }
 
@@ -40,6 +41,7 @@ h1 {
     font-size: 6rem;
     line-height: 1;
     margin: 1rem 2rem;
+     text-shadow: 2px 2px 8px #0a0a0a;
 }
 
 .countdown-el {
@@ -48,6 +50,7 @@ h1 {
 
 .countdown-el span{
     font-size: 1.5rem;
+     text-shadow: 2px 2px 8px #0a0a0a;
 }
 
 @media (max-width: 768px) {
@@ -60,19 +63,25 @@ h1 {
         font-size: 2.5rem;
         margin-top: 5rem;
         text-align: center;
+       
     }
 
     .big-text {
         font-size: 3rem;
         margin: 0.5rem 1rem;
+      
     }
 
     .countdown-container {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+       
     }
 
     .countdown-el span {
         font-size: 1.2rem;
+       
     }
 }
