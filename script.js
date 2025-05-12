@@ -16,11 +16,15 @@ function countdown() {
     const secondsEl = document.getElementById('seconds');
 
     daysEl.innerHTML = days;
-    hoursEl.innerHTML = hours;
-    minutesEl.innerHTML = minutes;
-    secondsEl.innerHTML = seconds;
+    hoursEl.innerHTML = formatTime(hours);
+    minutesEl.innerHTML = formatTime(minutes);
+    secondsEl.innerHTML = formatTime(seconds);
 
     console.log(minutes, seconds)
+}
+
+function formatTime(time) {
+    return time < 10 ? (`0${time}`) : time;
 }
 
 //initial call
